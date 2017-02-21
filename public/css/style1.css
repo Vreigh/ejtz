@@ -1,0 +1,24 @@
+.subject-container{
+
+}
+.subject-container .subject-outer{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.subject-container .subject-outer .subject{
+	height: 100px;
+	vertical-align: middle;
+	text-align: center;
+	border: 3px solid deepskyblue;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.subject-container .subject-outer .subject:hover{
+	border-color: lawngreen;
+}
+.subject-container .subject-outer .subject span{
+	color: black;
+	line-height: 100px;
+}
