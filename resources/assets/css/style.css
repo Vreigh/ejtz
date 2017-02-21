@@ -1,0 +1,838 @@
+html, body {
+	font-family: 'Oxygen';
+}
+
+
+.main {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+
+
+
+.responsive {
+	max-width: 100%;
+}
+.upper {
+	text-transform: uppercase;
+}
+.align-center {
+	text-align: center;
+}
+.upp-down {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+.bold  {
+	font-weight: 800;
+}
+
+#header {
+	position: relative;
+	z-index: 999;
+	background: #fff;
+}
+#header .menu {
+	font-weight: 800;
+	font-family: "Oxygen";
+	font-size: 24px;
+	margin-top: 45px;
+	cursor: pointer;
+}
+#header .back {
+	font-weight: 800;
+	font-family: "Oxygen";
+	font-size: 24px;
+	margin-top: 45px;
+	cursor: pointer;
+	position: relative;
+}
+#header .back:after {
+	content: "";
+	background-image: url("../img/back.png");
+	background-size: contain ;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	top: 3px;
+	right: 0px;
+	
+}
+div.content {
+	position: relative;
+	width: 100%;
+	overflow-y: hidden;
+	height: 100%;
+}
+div.content .name {
+	height: 750px;
+	position: relative;
+}
+
+div.content .name .text.upp-down {
+	width: 200px;
+	text-align: center;
+	-webkit-transform:translateY(-50%) rotate(-90deg);
+	-moz-transform:translateY(-50%) rotate(-90deg);
+	-ms-transform:translateY(-50%) rotate(-90deg);
+	-o-transform:translateY(-50%) rotate(-90deg);
+	transform:translateY(-50%) rotate(-90deg);
+
+	top: 50%;
+	left: -40px;
+	position: fixed;
+	cursor: pointer;
+}
+/*div.content .name .text:before{*/
+	/*content: "";*/
+	/*background-image: url("../img/donwArrow.png");*/
+	/*width: 14px;*/
+	/*height: 12px;*/
+	/*background-repeat: no-repeat;*/
+	/*position: absolute;*/
+	/*-webkit-transform: rotate(90deg);*/
+	/*-moz-transform: rotate(90deg);*/
+	/*-ms-transform: rotate(90deg);*/
+	/*-o-transform: rotate(90deg);*/
+	/*transform: rotate(90deg);*/
+	/*left: -20px;*/
+	/*top: 3px;*/
+/*}*/
+div.content .photoBox .photoContainer {
+	background-image: url("../img/photo1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 750px;
+	position: relative;
+	margin-top: 130px;
+}
+div.content .photoBox .photoContainer .galerry-icon {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 55px;
+	height: 25px;
+	cursor: pointer;
+}
+div.content .photoBox .photoContainer .descriptionContainer {
+	position: absolute;
+	bottom: 5%;
+}
+div.content .photoBox .photoContainer .descriptionContainer .title {
+	
+	font-size: 20px;
+}
+div.content .photoBox .photoContainer .descriptionContainer .desc {
+	
+	font-size: 18px;
+}
+div.content .photoBox .photoContainer .descriptionContainer .arrowContainer {
+	position: absolute;
+	bottom: 0;
+}
+div.content .photoBox .photoContainer .descriptionContainer .arrowContainer .arrow {
+	width: 26px;
+	height: 18px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	cursor: pointer;
+}
+div.content .photoBox .photoContainer .descriptionContainer .arrowContainer .arrowLeft {
+	background-image: url("../img/leftArrow.png");
+	position: absolute;
+	top: 10px;
+}
+div.content .photoBox .photoContainer .descriptionContainer .arrowContainer .arrowRight {
+	background-image: url("../img/rightArrow.png");
+	position: absolute;
+	top: 10px;
+	left: 35px;
+}
+div.content .photoBox .photoDescrContainer {
+	text-align: left;
+	padding-left: 0;
+	margin-top: 80px;
+	position: relative;
+	font-size: 18px;
+}
+div.content .photoBox .photoDescrContainer .galeryIcon {
+	background-image: url("../img/about-gallery.png");
+	width: 46px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: -80px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+div.content .photoBox .photoDescrContainer .photoList {
+	list-style: none;
+	padding: 0;
+}
+div.content .photoBox .photoDescrContainer .photoList li {
+	font-size: 16px;
+	color: #616161;
+	line-height: 28px;
+}
+div.content .photoBox .photoDescrContainer .photoList li.active {
+	color: #000000;
+	
+}
+
+div.content .photoBox .photoDescrContainer .eventlist {
+	font-size: 16px;
+	
+}
+div.content .photoBox .photoDescrContainer .eventlist .eventTitle {
+	color: #000;
+	margin-bottom: 24px;
+	
+}
+div.content .photoBox .photoDescrContainer .eventlist ul {
+	list-style: none;
+	color: #797979;
+	padding: 0;
+	line-height: 28px;
+}
+div.content .photoBox .photoDescrContainer .activeEvents {
+	
+}
+div.content .photoBox .photoDescrContainer .activeEvents ul {
+	list-style: none;
+	padding: 0;
+	font-size: 16px;
+}
+
+div.content .photoBox .photoDescrContainer .activeEvents ul li {
+	color: #000;
+	line-height: 28px;
+	margin-bottom: 5px;
+ }
+div.content .photoBox .photoDescrContainer .activeEvents ul li.active {
+	color: #e98c17;
+}
+div.content .photoBox .photoDescrContainer .arrowContainer {
+	position: relative;
+	
+}
+div.content .photoBox .photoDescrContainer .arrowContainer .arrow {
+	width: 26px;
+	height: 18px;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: contain;
+	cursor: pointer;
+}
+div.content .photoBox .photoDescrContainer  .arrowContainer .arrowLeft {
+	background-image: url("../img/leftArrow.png");
+	right: 36px;
+}
+div.content .photoBox .photoDescrContainer  .arrowContainer .arrowRight {
+	background-image: url("../img/rightArrow.png");
+	right: 0;
+}
+div.content .rightMenu {
+	position: relative;
+	height: 750px;
+}
+div.content .rightMenu .helpfundation {
+	width: 342px;
+	left: -115px;
+	top: 155px;
+	position: absolute;
+	cursor: pointer;
+}
+div.content .rightMenu .helpfundation:before {
+	content: "";
+	background-image: url("../img/fund-icon.png");
+	width: 23px;
+	height: 50px;
+	background-repeat: no-repeat;
+	position: absolute;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	left: -51px;
+	top: -14px;
+}
+div.content .rightMenu .share {
+	position: absolute;
+	bottom: 150px;
+	left: 35px;
+	cursor: pointer;
+}
+div.content .rightMenu .share:before {
+	content: "";
+	background-image: url("../img/shere-icon.png");
+	width: 29px;
+	height: 30px;
+	background-repeat: no-repeat;
+	position: absolute;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	left: -51px;
+	top: -5px;
+}
+div.content .menugrid {
+	position: absolute;
+	bottom: 20px;
+	right: 65px;
+	background-image: url("../img/grid.png");
+	width: 27px;
+	height: 25px;
+	background-size: contain;
+	cursor: pointer;
+}
+div.content .absoluteContainer {
+	position: relative;
+	height: 650px;
+}
+
+div.content .contentBox {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	
+}
+div.content .contentBox .contactBox {
+	line-height: 28px;
+}
+
+div.content .contentBox .descriptionBox {
+	
+}
+div.content .contentBox .descriptionBox .title {
+	margin-bottom: 15px;
+}
+div.content .contentBox  .categoryListBox {
+	
+}
+div.content .contentBox  .categoryListBox .categoryList {
+	list-style: none;
+	font-size: 16px;
+	color: #000;
+	line-height: 28px;
+}
+div.content .contentBox  .categoryListBox .categoryList li {
+	cursor: pointer;
+	
+}
+div.content .contentBox  .categoryListBox .categoryList li.active  {
+	font-weight: 800;
+}
+div.content .contentBox  .categoryListBox .categoryList li:hover {
+	font-weight: 800;
+	
+}
+div.content .categoryContainer {
+	text-align: center;
+	font-size: 24px;
+	margin-top:  250px;
+	cursor: pointer;
+}
+div.content .categoryContainer:hover {
+	
+}
+div.content .rotateConatiner {
+	position: absolute;
+	width: 40%;
+	/* top: 0; */
+	/* bottom: 0; */
+	/* transform: none; */
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 345px;
+	/* text-align: center; */
+}
+div.content .rotateConatiner span {
+	position: absolute;
+	width: 50%;
+	text-align: center;
+}
+div.content .rotateConatiner span.orange {
+	border-bottom: 1px solid #e98c17;
+	bottom: 10px;
+	left: 210px;
+}
+ 
+div.content .categoryContainer {
+	
+}
+div.content .categoryContainer .categorysList {
+	list-style: none;
+	text-align: left;
+}
+div.content .categoryContainer .categorysList li{
+	cursor: pointer;
+}
+div.content .categoryContainer .categorysList li:hover{
+	font-weight: 800;
+}
+div.content .categoryContainer .categorysList li.active {
+	font-weight: 800;
+}
+div.content .imageContainer {
+	
+}
+div.content .imageContainer .imageBox {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+div.content .imageContainer .imageBox.photo2 {
+	background-image: url("../img/photo2.png");
+}
+div.content .imageContainer .imageBox.photo3 {
+	background-image: url("../img/photo3.png");
+}
+div.content .imageContainer .imageBox.photo4 {
+	background-image: url("../img/photo4.png");
+}
+div.content .imageContainer .imageBox.photo5 {
+	background-image: url("../img/photo5.png");
+}
+div.content .photoBox {
+	margin-bottom: 25px;
+}
+div.content .galleryBox {
+	display: flex;
+	flex-flow: row wrap;
+}
+div.content .galleryBox .imgBox {
+	margin-bottom: 15px;
+	height: 260px;
+	padding: 0 7.5px ;
+	position: relative;
+}
+div.content .galleryBox .imgBox img {
+	height: 100%;
+}
+div.content .galleryBox .imgBox .galeryIcon {
+	background-image: url("../img/about-gallery.png");
+	width: 62px;
+	height: 54px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+div.content .flexCont {
+	display: flex;
+	flex-flow: row wrap;
+}
+div.content .prevEv {
+	background-image: url("../img/prev.png");
+	font-size: 26px;
+	height: 455px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+div.content .nextEv {
+	font-size: 26px;
+	color: #e98c17;
+	position: relative;
+}
+div.content .step {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	cursor: pointer;
+}
+div.content .categoryContainer.bg-color {
+	margin-top: 0;
+	background-color: #f4f4f4;
+	position: relative;
+	padding-bottom: 150px;
+}
+div.content .categoryContainer.bg-color .categorysList  {
+	font-size: 24px;
+}
+div.content .categoryContainer.bg-color .categorysList li.active {
+	font-size: 32px;
+	margin-top: 25px;
+}
+div.content .categoryContainer.bg-color .address {
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+div.content .categoryContainer.bg-color .address .orange {
+	color: #e98c17;
+	font-size: 20px;
+	border-bottom: 1px solid #000;
+	padding-bottom: 7px;
+}
+div.content .categoryContainer.bg-color .address .socialContainer .upp-down {
+	transform: rotate(0deg);
+	padding-left: 50px;
+	margin: 15px 0;
+	font-size: 20px;
+}
+div.content .categoryContainer.bg-color .address .socialContainer .helpfundation:before {
+	content: "";
+	background-image: url("../img/fund-icon.png");
+	width: 23px;
+	height: 50px;
+	background-repeat: no-repeat;
+	position: absolute;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	left: 0px;
+	top: -10px;
+}
+div.content .categoryContainer.bg-color .address .socialContainer .share:before {
+	content: "";
+	background-image: url("../img/shere-icon.png");
+	width: 29px;
+	height: 30px;
+	background-repeat: no-repeat;
+	position: absolute;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	left: 0px;
+	top: -5px;
+}
+div.content .photoBox .kontakt {
+	
+}
+div.content .photoBox .kontakt .kontaktBox {
+	
+}
+div.content .photoBox .kontakt .kontaktBox .titledesc {
+	font-size: 24px;
+	margin: 25px 0;
+}
+div.content .photoBox .kontakt .kontaktBox .part {
+	font-size: 18px;
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+div.content .photoBox .kontakt .kontaktBox .part .underline {
+	text-decoration: underline;
+}
+div.content .photoBox .kontakt .dane {
+	
+}
+div.content .photoBox .kontakt .dane .titledesc {
+	font-size: 24px;
+	margin: 25px 0;
+}
+div.content .photoBox .kontakt .dane .text {
+	font-size: 18px;
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+div.content .aboutFund{
+	font-size: 18px;
+	padding: 0;
+}
+div.content .aboutFund .titledesc {
+	font-size: 24px;
+	margin: 25px 0;
+}
+div.content .helpUs {
+	font-size: 20px;
+	padding-bottom: 50px;
+}
+div.content .helpUs .titledesc {
+	font-size: 24px;
+	margin: 25px 0;
+}
+div.content .helpUs .payPal {
+	position: relative;
+}
+div.content .helpUs .payPal:after {
+	content: "";
+	position: absolute;
+	background-image: url("../img/pay.png");
+	background-size: contain;
+	background-size: contain;
+	top: -9px;
+	right: -130px;
+	width: 101px;
+	height: 72px;
+	background-repeat: no-repeat;
+	
+}
+#freewall {
+	width: 100%;
+	margin: auto;
+	list-style: none;
+}
+#freewall .brick {
+	background-color: white;
+	float: left;
+	cursor: default;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.brick2 {
+	font-size: 24px;
+	color: #000;
+}
+ .brick2 .grey{
+	color: #616161;
+}
+ .brick2 .orange {
+	 color: #e98c17;
+ }
+ .brick2 .small {
+	 font-size: 18px;
+ }
+#freewall .brick .galerry-icon {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	background-image: url("../img/about-gallery.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 62px;
+	height: 54px;
+	cursor: pointer;
+	z-index: 999;
+}
+/*#gallery .item.item1{*/
+	/*width: 20%;*/
+	/*height: 250px;*/
+/*}*/
+/*#gallery .item.item2{*/
+	/*width: 20%;*/
+	/*height: 250px;*/
+	/*background-image: url("../img/photo2.png");*/
+/*}*/
+/*#gallery .item.item3{*/
+	/*width: 20%;*/
+	/*height: 500px;*/
+	/*background-image: url("../img/photo3.png");*/
+/*}*/
+/*#gallery .item.item4{*/
+	/*width: 40%;*/
+	/*height: 500px;*/
+	/*background-image: url("../img/photo4.png");*/
+/*}*/
+/*#gallery .item.item5{*/
+	/*width: 40%;*/
+	/*height: 250px;*/
+	/*background-image: url("../img/photo5.png");*/
+/*}*/
+@media screen and (max-width: 1500px) {
+	div.content .rotateConatiner {
+		bottom: 60px;
+	}
+	div.content .prevEv {
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	div.content .photoBox .photoDescrContainer .photoList li {
+		font-size: 14px;
+	}
+	div.content .photoBox .photoDescrContainer .eventlist {
+		font-size: 14px;
+	}
+	div.content .photoBox .photoDescrContainer .activeEvents ul {
+		font-size: 14px;
+	}
+	div.content .rotateConatiner {
+		bottom: 170px;
+	}
+	div.content .categoryContainer.bg-color .address .orange {
+		font-size: 14px;
+	}
+	div.content .categoryContainer.bg-color .address .socialContainer .upp-down  {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 991px){
+	.upp-down {
+		transform: rotate(0deg);
+		
+	}
+	div.content .categoryContainer .categorysList {
+		padding-left: 0;
+	}
+	div.content .categoryContainer.bg-color .address  {
+		position: static;
+		padding-left: 0;
+	}
+	div.content .categoryContainer.bg-color .address .orange {
+		font-size: 20px;
+	}
+	div.content .categoryContainer.bg-color .address .socialContainer .upp-down {
+		font-size: 20px;
+	}
+	div.content {
+		padding-top: 100px;
+	}
+	div.content .name .text.upp-down {
+		transform: rotate(0deg);
+		position: static;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 20px;
+		margin-top: 10px;
+	}
+	div.content .name {
+		height: auto;
+	}
+	div.content .photoBox .photoContainer .descriptionContainer .title {
+		font-size: 16px;
+	}
+	div.content .photoBox .photoContainer .descriptionContainer .desc {
+		font-size: 14px;
+	}
+	div.content .photoBox .photoDescrContainer .eventlist {
+		padding: 0;
+	}
+	div.content .photoBox .photoDescrContainer .activeEvents {
+		padding: 0;
+	}
+	div.content .rightMenu .helpfundation {
+		position: static;
+		padding-left: 50px;
+		padding-bottom: 30px;
+	}
+	div.content .rightMenu .share {
+		position: static;
+		padding-left: 50px;
+		padding-bottom: 30px;
+	}
+	div.content .rightMenu .helpfundation:before  {
+		left: 0;
+	}
+	div.content .rightMenu .share:before {
+		left: -8px;
+	}
+	div.content .rightMenu {
+		height: auto;
+		margin-top: 30px;
+		padding: 0 60px;
+	}
+	div.content .contentBox  .categoryListBox .categoryList {
+		padding: 0;
+	}
+	div.content .categoryContainer {
+		margin-top: 25px;
+	}
+	div.content .rotateConatiner {
+		text-align: center;
+		width: 100%;
+		position: static;
+		margin-top: 100px;
+	}
+	
+	div.content .rotateConatiner span.orange {
+		bottom: 9px;
+		right: 0;
+		left: 60%;
+		width: 40%;
+	}
+	div.content .photoBox .kontakt .kontaktBox {
+		padding: 0;
+	}
+	div.content .photoBox .kontakt .dane {
+		padding: 0;
+	}
+	div.content .aboutFund {
+		padding-left: 15px;
+	}
+}
+@media screen and (max-width: 769px) {
+	#header .logoContainer {
+		width: 50%;
+	}
+	#header .logoContainer img {
+		max-height: 100px;
+	}
+	#header .menu {
+		width: 50%;
+		margin: 30px 0;
+		text-align: right;
+	}
+	div.content .rotateConatiner {
+		margin-bottom: 25px;
+	}
+	div.content .rotateConatiner span.orange {
+		bottom: 0px;
+		right: 0;
+		left: 0;
+		width: 100%;
+		
+	}
+	div.content {
+		margin-top: 90px;
+	}
+	div.content .contentBox {
+		position: static;
+		top: 0;
+		transform: none;
+		margin-top: 20px;
+	}
+	div.content .menugrid {
+		position: static;
+		margin-bottom: 20px;
+		float: right;
+	}
+	div.content .absoluteContainer {
+		height: auto;
+	}
+	div.content .prevEv {
+		height: 255px;
+		font-size: 14px;
+	}
+	div.content .nextEv {
+		font-size: 14px;
+	}
+	div.content .galleryBox {
+		padding: 0;
+	}
+	#header .back {
+		margin: 45px 0 0 0;
+		width: 50%;
+	}
+	#header .back:after {
+		right: 0px;
+	}
+	div.content .categoryContainer .categorysList {
+		padding: 0;
+	}
+	div.content .categoryContainer {
+		font-size: 20px;
+	}
+	div.content .helpUs .payPal:after {
+		bottom: -58px;
+		left: -8px;
+		width: 82px;
+		height: 72px;
+	}
+	
+}
