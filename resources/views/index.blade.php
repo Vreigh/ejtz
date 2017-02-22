@@ -11,15 +11,17 @@
 
 
     <div class="row subject-container">
-        @for($i=0; $i<10; $i++)
-            <div class="col col-sm-6 col-md-4 col-lg-3 subject-outer">
-                <div class="row">
-                    <div class="col-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 subject" style="background-color: grey;">
-                        <span>TO <span style="color: orange;">(1)</span> <span style="color: lightgreen";>(1)</span></span>
+        @foreach($subjects as $subject)
+            <a href="{{url('tasks/' . $subject->identifier)}}">
+                <div class="col col-sm-6 col-md-4 col-lg-3 subject-outer">
+                    <div class="row">
+                        <div class="col-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 subject" style="background-color: {{$subject->color}};">
+                            <span><strong>{{$subject->name}}</strong> <span style="color: darkred;">(1)</span> <span style="color: darkgreen";>(1)</span></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        @endfor
+            </a>
+        @endforeach
     </div>
 
 </div>

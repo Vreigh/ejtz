@@ -1,9 +1,8 @@
 <?php
 
 
-Route::get('/', function (){
-    return view('index');
-});
+Route::get('/',                  'HomeController@getSubjects');
+Route::get('tasks/{id}',        'TaskController@getBySubject');
 
 Route::auth();
 

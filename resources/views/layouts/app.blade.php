@@ -55,9 +55,9 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
-                            @for($i=0; $i<10; $i++)
-                                <li><a href="{{ url('/logout') }}">TO</a></li>
-                            @endfor
+                            @foreach($subjects as $subject)
+                                <li style="background-color: {{$subject->color}}"><a href="{{ url('tasks/' . $subject->identifier) }}"><strong>{{$subject->name}}</strong></a></li>
+                            @endforeach
                         </ul>
                     </li>
                 </ul>

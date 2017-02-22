@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Describe you custom displays, columns and form items here.
  *
@@ -10,4 +9,4 @@
  * 		FormItem::register('customElement', \Foo\Bar\MyCustomElement::class);
  *
  */
-
+//FormItem::register('colorPicker', App\Filip\FormItems\ColorPicker::class);
